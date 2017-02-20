@@ -13,7 +13,7 @@ default:
       enable_starttls_auto: true
 <% else -%>
       enable_starttls_auto: false
-+<% end -%>
+<% end -%>
 
 <% scope.lookupvar('redmine::override_options').keys.sort.each do |key| -%>
   <%= key %>: <%= scope.lookupvar('redmine::override_options')[key] %>
